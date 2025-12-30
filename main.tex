@@ -1,0 +1,98 @@
+\documentclass{article}
+\usepackage[letterpaper, textwidth=5.5in, textheight=9.0in]{geometry}
+\usepackage{setspace}
+\usepackage{graphicx} % Required for inserting images
+
+% text and typesetting macros
+\renewcommand{\paragraph}[1]{\medskip\par\noindent{\textbf{#1}}~---}
+\setstretch{1.08}
+\sloppy\sloppypar\raggedbottom
+\frenchspacing
+\newcommand{\documentname}{\textsl{Article}}
+
+% math macros
+
+\title{\bfseries%
+DRAFT: Finding every coherent clock in the Kepler data}
+\author{Nana Miller \and David W. Hogg \and [others]}
+\date{October 2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}\noindent
+  Precise timings of astrophysical clocks (pulsars and stellar p-modes, for example) have delivered many important discoveries and measurements.
+  The NASA \textsl{Kepler} Mission made precise photometric time-series measurements on more than $10^5$ stars.
+  Here we search these data for phase-coherent sinusoidal signals that can be used as clocks for precision measurement.
+  A signal is phase-coherent, for us, if the signal does not drift far in angular phase over the 4.1-year Mission lifetime.
+  We find XXX modes across a total of YYY stars that meet a set of coherence, signal-to-noise, and amplitude requirements.
+  These modes are most common among stars of ZZZ types, but we find many surprising cases, including WWW.
+\end{abstract}
+
+\section{Hogg's Introduction}\label{sec:intro}
+The first solid empirical evidence for the existence of gravitational waves came from very precise timing of the binary pulsar system PSR~1913+16 \cite{hulsetaylor}:
+The system shows orbital decay consistent with that expected from the general relativistic prediction of radiation.
+This discovery involved incredibly precise timing measurements; it was only possible because the binary-pulsar system delivers pulse trains that are coherent over many years.
+
+In the case of a pulsar, ``coherent'' here means that the pulses can (in principle) be counted (with integers), and it is possible to label pulses with the correct integers even if there are long gaps in the observing program.
+In the case of the sinusoidal variations we consider in this \documentname, 
+``coherent'' will correspond to something we will call ``phase stability'':
+If the signal can be written as $A\,\cos(\omega\,t+\phi)$, the values of the phase $\phi$ doesn't vary substantially over the relevant time scale $T$.
+It is this phase stability (plus high amplitude $A$ and frequency $\omega$) that makes a clock useful for precision measurement.
+
+Long before the PSR~1913+16 timing campaigns, the precise timing of the orbital phases of the moons of Jupiter were used to constrain the speed of light (or, alternatively, the size of the Earth's orbit) \cite{roemer}.
+Now precise timing of astrophysical signals is being used to constrain the stochastic gravitational-wave background \cite{pta}, find orbital companions to pulsating stars \cite{murphy}, discover non-transiting planets in transiting systems \cite{ttvs}, among many other astrophysical applications.
+We ourselves have developed a ``$\Phi$M radio'' technique \cite{phimradio} for searching for planetary-companion signals hidden in light curves that display coherent oscillations.
+
+Many of the astrophysical searches for coherent timing signals are bespoke, in the sense that they involve looking for very specific kinds of oscillations or signals in very specific kinds of objects.
+What is not known is: How many stars---and what kinds of stars---display signals that could be used as clocks for timing experiments?
+Here we take the very first step towards answering this question by looking for phase-stable sinusoidal signals in the light curves of stars observed by the NASA \textsl{Kepler} Mission \cite{kepler}.
+Any coherent mode we find can be searched for companions, accelerations, orbital decays, or internal changes that might imprint as informative (but small) phase shifts.
+
+\section{Assumptions and choices}
+
+\paragraph{Kepler data and uncertainties}
+
+\paragraph{Data filtering and normalization}
+
+\paragraph{Times and exposure times}
+
+\paragraph{Sinusoidal signals}
+
+\paragraph{One-mode approximation}
+
+\paragraph{No red noise}
+
+\paragraph{Magic numbers and decisions}
+In addition to all of this, there are a number of relatively arbitrary decisions we made intuitively.
+These include EXAMPLES HERE.
+
+\section{Data}
+
+NANA write what you used to get the data and what normalization you did.
+
+\section{Methods and results}
+
+NANA write here.
+
+\section{Discussion}
+
+Hogg say: What can we say about our HR diagram?
+
+Hogg say: Do we really believe our above-Nyquist signals?
+
+Hogg say: We assumed sinusoidal; was that dumb?
+
+Hogg say: What can be done with these modes?
+How do they compare with the collection of millisecond pulsars?
+
+\paragraph{Acknowledgements}
+It is a pleasure to thank
+  Andy Casey (Flatiron), and
+  Abby Shaum (Columbia)
+for valuable discussions and technical advice.
+The Flatiron Institute is a division of the Simons Foundation.
+All code used for this project is available at [HOGG URL HERE].
+
+\end{document}
